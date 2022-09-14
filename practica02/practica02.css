@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sp2 {
+    color:red;
+
+}
+
+#sp1{
+    /* margin: 100px;
+    padding: 100px; */
+    color: black;
+}
+
+p span {
+    color: blueviolet;
+}
+
+.fuente {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.nombreClase{
+    color: aqua;
+}
+
+/* separar con estilos */
+
+span::after {
+    content: '\A''\A'; white-space: pre;
+}
+
+#borrar {
+    background-color: red;
+}
+
+#copiar {
+    background-color: blue;
+}
+
+#guardar{
+    background-color: green;
+}
+
+.ui{
+    color: white;
+    padding: 10px;
+}
+
+.spa2{
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.spa3{
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.spa4{
+    color:blueviolet;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.spa5{
+    color:brown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.spa6{
+    color:chartreuse;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.spa7{
+    color:tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2::before {
+    content: url(https://th.bing.com/th/id/R.1846017e0ab13d89e03abcaaaadbc094?rik=BPZuTeUcJs1KZg&riu=http%3a%2f%2fwww.gestaoativa.com.br%2fpublic%2fsolucoes%2fsistemas_web_a_a.png%3f1387826041&ehk=pwN0ScEDpV%2fX09TL8c2HHSC3YeGwgGBk%2fCKZCZVpaU8%3d&risl=&pid=ImgRaw&r=0);
+}
+
+body {
+    text-align: center;
+}
