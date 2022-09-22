@@ -1,0 +1,38 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header{
+    height: 26vh;
+    background-color: gray;
+}
+
+.main{
+    height: 7vh;
+    background-color: blue;
+}
+
+.contorne{
+    height: 60vh;
+    background-color: brown;
+    width: 70vw;
+}
+.publicidad{
+    background-color: aqua;
+    height: 60vh;
+    width: 30vw;
+
+    }
+
+.pie{
+    height: 7vh;
+    background-color: blue;
+}
+ 
+.superpadre{
+    display: flex;
+} 
