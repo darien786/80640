@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarColor(color){
+            console.log("el color recibido es:" , color)
+            var e = document.getElementById("texto")
+            e.style.color = color    
+            let es = document.getElementById("texto1")
+        }
+
+        function cambiarColor2(color){
+            console.log("el color recibido es:",color)
+            let e = document.getElementById("texto1")
+            e.style.color = color;
+        }
+
+        function cambiarColores(color){
+            let c = document.getElementsByTagName("p")
+            //for (let index =0;index<c.length; index++){
+            //    c[index].style.color = color    
+            //}
+            var cs = [].slice.call(c)
+            cs.forEach(element =>{
+             console.log(element)
+                
+            });
+
+        }
+
+        </script>
+</head>
+<body>
+    <!-- p#texto{Simple texto}+button[onclick=cambiarColor\(\'yellow'\)"])*2" -->
+
+    <p id="texto">Simple texto</p>
+    <p id="texto1">Simple texto</p>
+    <p id="texto2">Simple texto</p>
+    <button onclick="cambiarColor('blue'); cambiarColor2('green')">Azul</button>
+    <button onclick="cambiarColor('red'); cambiarColor2('gray')">Rojo</button>
+    <button onclick="cambiarColores('orange')">colores</button>
+</body>
+</html>
