@@ -20,15 +20,37 @@
         }
 
         function cambiarColores(color){
-            let c = document.getElementsByTagName("p")
+            let c = document.getElementsByTagName("p");
             //for (let index =0;index<c.length; index++){
             //    c[index].style.color = color    
             //}
-            var cs = [].slice.call(c)
-            cs.forEach(element =>{
-             console.log(element)
-                
-            });
+            
+            //let i = 0;
+            //for(let x in c){
+            //    if(i < c.length){
+            //        c[x].style.color = "blue"
+            //        i++;
+            //    }
+            //}
+
+
+            //for (const x in c ){
+            //    if(c.hasOwnProperty.call(c,x)){
+            //        c[x].style.color="blue"
+            //    }
+            //}
+
+            for(const  x in c ){
+                console.log(x)
+                if(Object.hasOwnProperty.call(c,x)){
+                    c[x].style.color = "blue";
+                }
+            }
+            //var cs = [].slice.call(c)
+            //cs.forEach(element => {
+            //console.log(element)
+                 
+            //});
 
         }
 
@@ -42,6 +64,6 @@
     <p id="texto2">Simple texto</p>
     <button onclick="cambiarColor('blue'); cambiarColor2('green')">Azul</button>
     <button onclick="cambiarColor('red'); cambiarColor2('gray')">Rojo</button>
-    <button onclick="cambiarColores('orange')">colores</button>
+    <button onclick="cambiarColores('green')">colores</button>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+   
+</head>
+<body>
+    <!-- (ul#lista>(li#ele${ele$})*4)+input -->
+    <!-- (ul#lista>(li#ele${ele$})*4)^input[value=agregar type=button onclick=agregar\(\)] -->
+    <h1>Todo</h1>
+    <input type="text" id="todo" placeholder="Escribe la tarea ">
+    <ul id="lista">
+        </ul>
+    <input type="button" value="agregar" onclick="agregar()">
+    <input type="button" value="buscar" onclick="buscar()">
+    <script src="agregar.js"></script>
+</body>
+</html>
